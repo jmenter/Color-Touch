@@ -41,9 +41,10 @@ class TouchView: UIView {
             CGContextSetFillColorWithColor(context, UIColor(hue: normalizedForce, saturation: normalizedForce, brightness: 1.0, alpha: normalizedForce).CGColor)
             CGContextFillEllipseInRect(context, circle)
             
-            CGContextSetLineWidth(context, normalizedForce * 5)
+            CGContextSetLineWidth(context, normalizedForce * 5.0)
             CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
             CGContextStrokeEllipseInRect(context, circle)
+            NSString(format: "%0.2f", touch.force).drawAtPoint(CGPoint(x: location.x - 12.0, y: location.y - 60.0), withAttributes: nil)
         }
     }
 
