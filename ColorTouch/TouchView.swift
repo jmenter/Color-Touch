@@ -6,29 +6,29 @@ class TouchView: UIView {
     let actualTouches = NSMutableSet()
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        actualTouches.removeAllObjects()
         actualTouches.addObjectsFromArray(Array(touches))
         setNeedsDisplay()
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        actualTouches.addObjectsFromArray(Array(touches))
         setNeedsDisplay()
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        for touch in touches {
-            actualTouches.removeObject(touch)
-        }
-        setNeedsDisplay()
+        removeTouches(touches)
     }
+    
     override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+        removeTouches(touches)
+    }
+    
+    private func removeTouches(touches: Set<UITouch>?) {
         for touch in touches! {
             actualTouches.removeObject(touch)
         }
         setNeedsDisplay()
-
     }
+    
     override func drawRect(rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         
