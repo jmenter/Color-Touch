@@ -14,6 +14,8 @@
 		6375979E1BB8AF15004EB5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6375979C1BB8AF15004EB5F1 /* LaunchScreen.storyboard */; };
 		637597A61BB8AF53004EB5F1 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637597A51BB8AF53004EB5F1 /* TouchView.swift */; settings = {ASSET_TAGS = (); }; };
 		638C2FB01BBF37AA007A7210 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */; settings = {ASSET_TAGS = (); }; };
+		63D723771BC04D2C00FC32E9 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 63D723751BC04D2C00FC32E9 /* Spark.sks */; settings = {ASSET_TAGS = (); }; };
+		63D723781BC04D2C00FC32E9 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D723761BC04D2C00FC32E9 /* spark.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		638C2FAD1BBF37AA007A7210 /* ColorTouch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorTouch-Bridging-Header.h"; sourceTree = "<group>"; };
 		638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
 		638C2FAF1BBF37AA007A7210 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		63D723751BC04D2C00FC32E9 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
+		63D723761BC04D2C00FC32E9 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */,
 				637597951BB8AF15004EB5F1 /* ViewController.swift */,
 				637597A51BB8AF53004EB5F1 /* TouchView.swift */,
+				63D723751BC04D2C00FC32E9 /* Spark.sks */,
+				63D723761BC04D2C00FC32E9 /* spark.png */,
 				637597971BB8AF15004EB5F1 /* Main.storyboard */,
 				6375979A1BB8AF15004EB5F1 /* Assets.xcassets */,
 				6375979C1BB8AF15004EB5F1 /* LaunchScreen.storyboard */,
@@ -132,7 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D723781BC04D2C00FC32E9 /* spark.png in Resources */,
 				6375979E1BB8AF15004EB5F1 /* LaunchScreen.storyboard in Resources */,
+				63D723771BC04D2C00FC32E9 /* Spark.sks in Resources */,
 				6375979B1BB8AF15004EB5F1 /* Assets.xcassets in Resources */,
 				637597991BB8AF15004EB5F1 /* Main.storyboard in Resources */,
 			);
