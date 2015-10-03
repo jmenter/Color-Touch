@@ -13,6 +13,7 @@
 		6375979B1BB8AF15004EB5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6375979A1BB8AF15004EB5F1 /* Assets.xcassets */; };
 		6375979E1BB8AF15004EB5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6375979C1BB8AF15004EB5F1 /* LaunchScreen.storyboard */; };
 		637597A61BB8AF53004EB5F1 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637597A51BB8AF53004EB5F1 /* TouchView.swift */; settings = {ASSET_TAGS = (); }; };
+		638C2FB01BBF37AA007A7210 /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		6375979D1BB8AF15004EB5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6375979F1BB8AF15004EB5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637597A51BB8AF53004EB5F1 /* TouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
+		638C2FAD1BBF37AA007A7210 /* ColorTouch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorTouch-Bridging-Header.h"; sourceTree = "<group>"; };
+		638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		638C2FAF1BBF37AA007A7210 /* ToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,15 @@
 			isa = PBXGroup;
 			children = (
 				637597931BB8AF15004EB5F1 /* AppDelegate.swift */,
+				638C2FAF1BBF37AA007A7210 /* ToneGenerator.h */,
+				638C2FAE1BBF37AA007A7210 /* ToneGenerator.m */,
 				637597951BB8AF15004EB5F1 /* ViewController.swift */,
 				637597A51BB8AF53004EB5F1 /* TouchView.swift */,
 				637597971BB8AF15004EB5F1 /* Main.storyboard */,
 				6375979A1BB8AF15004EB5F1 /* Assets.xcassets */,
 				6375979C1BB8AF15004EB5F1 /* LaunchScreen.storyboard */,
 				6375979F1BB8AF15004EB5F1 /* Info.plist */,
+				638C2FAD1BBF37AA007A7210 /* ColorTouch-Bridging-Header.h */,
 			);
 			path = ColorTouch;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		637597881BB8AF15004EB5F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jeff Menter";
 				TargetAttributes = {
@@ -138,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				637597961BB8AF15004EB5F1 /* ViewController.swift in Sources */,
+				638C2FB01BBF37AA007A7210 /* ToneGenerator.m in Sources */,
 				637597A61BB8AF53004EB5F1 /* TouchView.swift in Sources */,
 				637597941BB8AF15004EB5F1 /* AppDelegate.swift in Sources */,
 			);
@@ -250,10 +259,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ColorTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffmenter.ColorTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorTouch/ColorTouch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +273,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ColorTouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffmenter.ColorTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorTouch/ColorTouch-Bridging-Header.h";
 			};
 			name = Release;
 		};
